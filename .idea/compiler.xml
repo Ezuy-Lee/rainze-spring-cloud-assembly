@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rainze-spring-cloud-eureka" />
+        <module name="rainze-spring-cloud-hystrix-dashboard" />
+        <module name="rainze-spring-cloud-consumption" />
+        <module name="rainze-spring-cloud-assembly" />
+        <module name="rainze-spring-cloud-config" />
+        <module name="rainze-spring-cloud-zipkin" />
+        <module name="rainze-spring-cloud-user" />
+        <module name="rainze-spring-cloud-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rainze-spring-cloud-assembly" target="1.8" />
+      <module name="rainze-spring-cloud-config" target="1.8" />
+      <module name="rainze-spring-cloud-consumption" target="1.8" />
+      <module name="rainze-spring-cloud-eureka" target="1.8" />
+      <module name="rainze-spring-cloud-hystrix-dashboard" target="1.8" />
+      <module name="rainze-spring-cloud-user" target="1.8" />
+      <module name="rainze-spring-cloud-zipkin" target="1.8" />
+      <module name="rainze-spring-cloud-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="rainze-spring-cloud-assembly" options="-nowarn" />
+      <module name="rainze-spring-cloud-config" options="-nowarn" />
+      <module name="rainze-spring-cloud-consumption" options="-nowarn" />
+      <module name="rainze-spring-cloud-eureka" options="-nowarn" />
+      <module name="rainze-spring-cloud-hystrix-dashboard" options="-nowarn" />
+      <module name="rainze-spring-cloud-user" options="-nowarn" />
+      <module name="rainze-spring-cloud-zipkin" options="-nowarn" />
+      <module name="rainze-spring-cloud-zuul" options="-nowarn" />
+    </option>
+  </component>
+</project>
