@@ -10,7 +10,7 @@ spring:
           uri: https://gitee.com/ezuylee/SpringCloud-config-repo.git   # 配置git仓库地址
           search-paths: SpringCloud-config-repo   # 配置仓库路径
           username: ezuylee@gmail.com  # 访问git仓库的用户名
-          password: dev1234%^&*   # 访问git仓库的用户密码
+          password: XXX   # 访问git仓库的用户密码
           basedir: H:\\liyuze-workspace\\micro-cloud\\config # 配置中心远程clone下来的配置文件所在的位置。目录不存在的话，系统会自动创建dir目录。默认情况下，克隆下来的文件保存在C:\Users\<当前用户>\AppData\Local\Temp目录下
           ##使用版本控制方式将配置文件clone到本地，往往都是克隆到一些临时目录中，但是操作系统往往会清理这些临时目录，这可以导致一些我们不期待的情况，比如丢配置，为了避免出现这种问题，可以通过spring.cloud.config.server.svn.basedir去更改本地仓库的位置。
       label: master # 配置仓库的分支
