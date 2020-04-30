@@ -86,3 +86,7 @@ rabbitmq目前只用在配置中心，实现动态刷新spring bean，建议安�
 
 #### 个人博客
 www.liyuze.work
+
+### 项目后续加入模块
+ 完善的日志
+ 集成alibaba微服务组件
