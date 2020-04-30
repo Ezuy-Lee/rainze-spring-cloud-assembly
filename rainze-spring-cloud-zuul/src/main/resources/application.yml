@@ -14,11 +14,11 @@ eureka:
 zuul:
   routes:
     api-user:
-      path: /api-user/** # /api-user开头的请求，全部转发到sea-service-user服务中去
-      service-id: sea-service-user # 应用名称
+      path: /api-user/** # /api-user开头的请求，全部转发到user服务中去
+      service-id: rainze-spring-cloud-user # 应用名称
     api-shop:
-      path: /api-shop/** # /api-shop开头的请求，全部转发到sea-web-shop服务中去
-      service-id: sea-web-shop # 应用名称
+      path: /api-csm/** # /api-csm开头的请求，全部转发到消费服务中去
+      service-id: rainze-spring-cloud-consumption # 应用名称
 
 
 # 需要设置timeoutInMilliseconds属性，不然的话，hystrix断路器不起作用，页面就会报错（如果配置了timeoutInMilliseconds属性，则会执行我们的断路器回调方法）；同时，值的大小也是有讲究的，一般设置要 >= ribbon的超时时间值

@@ -1,5 +1,6 @@
 package com.rainze.cloud.assembly.controller;
 
+import com.rainze.cloud.assembly.service.UserServiceFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -7,7 +8,6 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import pers.zb.web.shop.service.UserServiceFeign;
 
 /**
  * 服务调用者
@@ -33,7 +33,7 @@ public class ShopController {
 
     /**
      * 从配置中心获取的值，其中foo为配置文件中的key。
-     *      当前配置中心就采用我的码云上的测试项目 https://gitee.com/zhoubang85/springcloud-config-test.git
+     *      当前配置中心在个人码云上
      */
     @Value("${message}")
     private String message;
