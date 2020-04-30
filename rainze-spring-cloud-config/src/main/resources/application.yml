@@ -20,6 +20,12 @@ spring:
     username: guest
     password: guest
 
+    #stream:   数据量大的情况用kafka 适用于企业级
+    #  kafka:
+    #    binder:
+    #      brokers: 192.168.0.118:9092
+    #      zk-nodes: 192.168.0.118:2181
+
 # 为了让config server实现集群、高可用，则需要配置eureka注册中心
 eureka:
   instance:
