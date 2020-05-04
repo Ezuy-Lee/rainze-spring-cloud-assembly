@@ -6,9 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import zipkin.server.EnableZipkinServer;
 
-@EnableDiscoveryClient
-@EnableZipkinServer //开启zpk服务
-@SpringBootApplication
+
+
 /**
  *
  * Zipkin 是一个开放源代码分布式的跟踪系统，每个服务向zipkin报告计时数据，zipkin会根据调用关系通过Zipkin UI生成依赖关系图。
@@ -27,10 +26,13 @@ import zipkin.server.EnableZipkinServer;
  * @Author: liyuze
  * @Date: 2020/4/30 16:16
  */
-public class RainzeSpringCloudEurekaApplication {
+@EnableDiscoveryClient
+@EnableZipkinServer //开启zpk服务
+@SpringBootApplication
+public class RainzeSpringCloudZipkinApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RainzeSpringCloudEurekaApplication.class, args);
+        SpringApplication.run(RainzeSpringCloudZipkinApplication.class, args);
     }
 
 }

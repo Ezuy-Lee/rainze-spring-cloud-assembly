@@ -18,6 +18,7 @@
         <module>rainze-spring-cloud-zipkin</module>
         <module>rainze-spring-cloud-zuul</module>
         <module>rainze-spring-cloud-hystrix-dashboard</module>
+        <module>rainze-spring-cloud-stream</module>
     </modules>
 
 

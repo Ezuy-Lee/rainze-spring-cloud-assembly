@@ -39,6 +39,10 @@
 ```
 rabbitmq目前只用在配置中心，实现动态刷新spring bean，建议安装。
 ```
+- 安装kafka、zookeeper
+```
+用来做stream服务支持。
+```
 
 ##### 2、开发环境（以下是我本机环境）
 
@@ -83,9 +87,9 @@ rabbitmq目前只用在配置中心，实现动态刷新spring bean，建议安�
 7、启动 rainze-spring-cloud-zipkin 作为链路追踪服务中心，负责存储链路数据;运用了Sleuth;Sleuth 用来追踪记录日志;其中兼容支持了zipkin,用来汇总并展示数据
 
 #### 打开eureka控制台，查看各服务的集群信息
-
-#### 个人博客
-www.liyuze.work
+ 截图略
+#### 
+个人博客 :www.liyuze.work
 
 ### 项目后续加入模块
  完善的日志
